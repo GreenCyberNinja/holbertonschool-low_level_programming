@@ -3,8 +3,6 @@
 /**
 * main - a function thats expecting no arguments
 *
-* printf - print the formatted output
-*
 * Return: void
 */
 
