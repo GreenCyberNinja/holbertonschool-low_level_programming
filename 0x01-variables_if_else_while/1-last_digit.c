@@ -1,11 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
 /**
-* main = function void of argument
+* main - function void of argument
 *
-* last digit of a random number and if its 5 or greater or 6 or less or 0
+* Description: to take the last digit and compare it
 *
 * Return: void
 */
