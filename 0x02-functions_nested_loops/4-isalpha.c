@@ -15,7 +15,7 @@ int _isalpha(int c)
 {
 	r = 1;
 }
-	else if (c >=97 && c <= 122)
+	else if (c >= 97 && c <= 122)
 {
 	r = 1;
 }
@@ -23,5 +23,5 @@ int _isalpha(int c)
 {
 	r = 0;
 }
-	return(r);
+	return (r);
 }
