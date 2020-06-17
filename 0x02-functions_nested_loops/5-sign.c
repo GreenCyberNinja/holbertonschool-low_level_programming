@@ -1,10 +1,11 @@
 #include "holberton.h"
 
 /**
+* print_sign - prints wether its positive, negative, or 0
 *
+* @n: input
 *
-*
-*
+* Return: r1
 */
 
 int print_sign(int n)
