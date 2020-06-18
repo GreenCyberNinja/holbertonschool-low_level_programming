@@ -11,26 +11,26 @@ void times_table(void)
 	int co;
 	int r;
 
-	for (li = 0 ; li <= 9 ; li++)
+	for (li = 0 ; li < 10 ; li++)
 {
 
-	for (co = 0 ; co <= 9 ; co++)
+	for (co = 0 ; co < 10 ; co++)
 
 {
 	r = (li * co);
-	if (r <= 9)
-{
-	_putchar(' ');
-	_putchar(r % 10 + '0');
-}
-	else
+	if (r > 9)
 {
 	_putchar(r / 10 + '0');
-	_putchar(r % 10 + '0');
 }
+	_putchar(r % 10 + '0');
+
 	if (co < 9)
 {
 	_putchar(',');
+	if (((co + 1) * (li)) < 10)
+{
+	_putchar(' ');
+}
 	_putchar(' ');
 }
 }
