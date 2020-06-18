@@ -1,10 +1,10 @@
 #include "holberton.h"
 
 /**
+* jack_bauer - count up to 23:59
 *
 *
-*
-*
+* Return: void
 */
 void jack_bauer(void)
 {
@@ -34,5 +34,5 @@ void jack_bauer(void)
 }
 }
 }
-	return;
+	return (0);
 }
