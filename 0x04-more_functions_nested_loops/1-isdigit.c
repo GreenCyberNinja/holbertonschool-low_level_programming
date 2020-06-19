@@ -5,7 +5,7 @@
 *
 * @c: input
 *
-* Return : result
+* Return: result
 */
 int _isdigit(int c)
 {
