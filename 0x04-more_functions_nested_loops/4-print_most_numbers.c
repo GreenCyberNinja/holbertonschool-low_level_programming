@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "holberton.h"
 
 /**
 * print_most_numbers - print the alphabet with putchar
@@ -13,7 +13,7 @@ void print_most_numbers(void)
 {
 	if (ch != '2' && ch != '4')
 
-	putchar(ch);
+	_putchar(ch);
 }
-	putchar('\n');
+	_putchar('\n');
 }
