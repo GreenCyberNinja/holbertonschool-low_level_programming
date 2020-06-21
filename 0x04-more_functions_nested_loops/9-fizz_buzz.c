@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /**
+* main - prints 0-99
 *
 *
-*
-*
+* Return: void
 */
 
 int main(void)
