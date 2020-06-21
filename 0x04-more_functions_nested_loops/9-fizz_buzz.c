@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "holberton.h"
+
 /**
 * main - prints 0-99
 *
@@ -29,7 +30,10 @@ int main(void)
 {
 	printf("%d", t);
 }
+	if (t < 100)
+{
 	putchar(' ');
+}
 }
 	putchar('\n');
 	return (0);
