@@ -1,9 +1,9 @@
 #include "holberton.h"
 
 /**
+* print_diagonal - prints a diagonal line
 *
-*
-*
+* @n: input
 *
 */
 
