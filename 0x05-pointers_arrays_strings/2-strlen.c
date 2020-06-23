@@ -1,9 +1,10 @@
 #include "holberton.h"
 /**
+* _strlen - retuens string length
 *
+* @s: input pointer
 *
-*
-*
+* Return: returns var n
 */
 int _strlen(char *s)
 {
