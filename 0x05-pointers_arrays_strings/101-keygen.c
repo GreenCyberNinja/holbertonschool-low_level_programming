@@ -7,7 +7,7 @@
 * Return: void
 */
 
-int main (void)
+int main(void)
 {
 	char d[63] = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 	char password[100];
@@ -15,11 +15,11 @@ int main (void)
 	int y;
 	int sum;
 
-	srand (time(NULL));
+	srand(time(NULL));
 	sum = 0;
 	x = 0;
 
-	while (sum <(27772 - 122))
+	while (sum < (27772 - 122))
 
 {
 	y = rand() % 62;
@@ -33,6 +33,6 @@ int main (void)
 	x++;
 	password[x] = '\0';
 	printf("%s", password)
-	
+
 	return (0);
-}	
+}
