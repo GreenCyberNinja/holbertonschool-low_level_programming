@@ -1,25 +1,26 @@
 #include <stdio.h>
-#include <stdlb.h>
+#include <stdlib.h>
 #include <time.h>
 /**
-* main - cycles through all password combos at once
+* main - random generates password
+*
 *
 * Return: void
 */
 
-int main(void)
-{
-	char d[63] = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+int main (void)
+{	
+	char d[63] =  "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
 	char password[100];
 	int x;
 	int y;
 	int sum;
 
-	srand(time(NULL));
+	srand (time(NULL));
 	sum = 0;
 	x = 0;
 
-	while (sum < (27772 - 122))
+	while (sum < (2772 - 122))
 
 {
 	y = rand() % 62;
@@ -32,7 +33,7 @@ int main(void)
 	password[x] = y;
 	x++;
 	password[x] = '\0';
-	printf("%s", password)
-
+	printf("%s", password);
+	
 	return (0);
-}
+}	
