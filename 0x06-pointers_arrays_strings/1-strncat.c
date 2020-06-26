@@ -2,8 +2,8 @@
 /**
 * _strncat - cocatenate two string until n in array
 * @dest: destination array
-* @xrc: source string
-* @n: limiter 
+* @src: source string
+* @n: limiter
 * Return: dest
 */
 char *_strncat(char *dest, char *src, int n)
