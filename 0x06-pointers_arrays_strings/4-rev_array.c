@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
-*
-*
-*
+* reverse_array - reverses array
+* @a: input array
+* @n: input limitter
 *
 *
 *
@@ -16,7 +16,7 @@ void reverse_array(int *a, int n)
 	x = 0;
 	y = 0;
 
-	while ( x < n - 1)
+	while (x < n - 1)
 {
 	x++;
 }
