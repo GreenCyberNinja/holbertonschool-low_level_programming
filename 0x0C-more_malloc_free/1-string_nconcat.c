@@ -42,7 +42,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	if (ctstr == NULL)
 	{
-		free(ctrstr);
+		free(ctstr);
 		return (NULL);
 	}
 	for (a = 0; a < len1; a++)
