@@ -1,4 +1,4 @@
-#include "calc.h"
+#include "3-calc.h"
 /**
 * main - gets operator and args from terminal
 *
@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
 	}
 	ans = (*get_op_func)(argv[2])(a, b);
 
-	if (ans == NULL)
+	if (argv[2] == NULL)
 	{
 		printf("Error\n");
 		exit(99);
