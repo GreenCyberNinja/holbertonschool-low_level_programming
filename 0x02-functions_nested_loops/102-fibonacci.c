@@ -17,11 +17,11 @@ int main(void)
 		c = a + b;
 		a = b;
 		b = c;
-	printf("lu", c);
-	if (i < 47)
-	{
-		printf(", ");
-	}
+		printf("%lu", c);
+		if (i < 47)
+		{
+			printf(", ");
+		}
 	}
 	printf("\n");
 	return (0);
