@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 	int a;
 	int b;
 	int ans;
-
+	
 	if (argc != 4 || argv == NULL)
 	{
 		printf("Error\n");
@@ -28,11 +28,6 @@ int main(int argc, char *argv[])
 	}
 	ans = (*get_op_func)(argv[2])(a, b);
 
-	if (argv[2] == NULL)
-	{
-		printf("Error\n");
-		exit(99);
-	}
 	printf("%d\n", ans);
 	return (0);
 }
