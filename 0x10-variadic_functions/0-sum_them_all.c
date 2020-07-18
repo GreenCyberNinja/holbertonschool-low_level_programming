@@ -1,10 +1,8 @@
 #include "variadic_functions.h"
 /**
-*
-*
-*
-*
-*
+* sum_them_all - adds all arguments
+* @n: const amount of arguments
+* Return: sum or 0
 */
 int sum_them_all(const unsigned int n, ...)
 {
@@ -24,5 +22,5 @@ int sum_them_all(const unsigned int n, ...)
 	}
 	va_end(ad);
 
-	return sum;
+	return (sum);
 }
