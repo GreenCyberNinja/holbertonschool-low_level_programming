@@ -2,24 +2,25 @@
 /**
 * binary_to_uint - converts binary to unsigned int
 * @b: input string
+* Return: returns base 10 or 0
 */
 unsigned int binary_to_uint(const char *b)
 {
 	int l;
-	unsigned int coin = 0, sum = 1;
+	unsigned int nint = 0;
 
 	if (b == NULL)
 		return (0);
 
-	for (l = 0; b[l] != '\0' && l < 32; l++)
-		continue;
-
-	for (l--; l >= 0; l--, sum *= 2)
+	for (l = 0; b[l] != '\0'; l++, nint = nint << 1)
 	{
 		if (b[l] == '1')
-			coin += sum;
-		if (b[l] != '1' && b[l] != '0')
+		{
+			nint++;
+		}
+		if (b[l] != '0' && b[l] != '1')
 			return (0);
 	}
-	return (coin);
+	nint = nint >> 1;
+	return (nint);
 }
