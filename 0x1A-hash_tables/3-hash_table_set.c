@@ -9,22 +9,32 @@
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int ind;
-
+	hash_node_t *tmp;
+	char *newv;
 
 	if (ht == NULL || key == NULL || value == NULL)
-	{
 		return (0);
-	}
+
 	if (strlen(key) == 0)
-	{
 		return (0);
-	}
+
 	ind = key_index((unsigned char *)key, ht->size);
+	tmp = ht->array[ind];
+	while (tmp)
+	{
+		if (strcmp(tmp->key, key) == 0)
+		{
+			newv = strdup(value);
+			free(tmp->value);
+			tmp->value = newv;
+			return (1);
+		}
+		tmp = tmp->next;
+	}
 
 	if (add_node(&ht->array[ind], key, value) == NULL)
-	{
 		return (0);
-	}
+
 	return (1);
 }
 /**
