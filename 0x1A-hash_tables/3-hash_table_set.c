@@ -13,19 +13,16 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	if (ht == NULL || key == NULL || value == NULL)
 	{
-		printf("it failed");
 		return (0);
 	}
 	if (strlen(key) == 0)
 	{
-		printf("strlen fail");
 		return (0);
 	}
 	ind = key_index((unsigned char *)key, ht->size);
 
 	if (add_node(&ht->array[ind], key, value) == NULL)
 	{
-		printf("add node fail");
 		return (0);
 	}
 	return (1);
